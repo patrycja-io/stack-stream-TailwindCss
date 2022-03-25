@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <nav class="bg-green-300">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+        <div class="flex space-x-4 ">
+
+          <div>
+            <a href="https://github.com/patrycja-io" class="flex items-center py-5 px-2 text-neutral-900 ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+              </svg>
+              <span class="font-bold">PATRYCJA.IO</span>
+            </a>
+          </div>
+
+          <div class="hidden md:flex items-center space-x-1">
+            <a href="#" class=" py-5 px-3 text-neutral-900 hover:text-neutral-600">Features</a>
+            <a href="#" class=" py-5 px-3 text-neutral-900 hover:text-neutral-600">Prices</a>
+          </div>
+
+        </div>
+
+    <!-- second section -->
+
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="#" class="text-neutral-900  hover:text-neutral-600 py-5 px-5">Login</a>
+          <a href="#" class="text-neutral-50 bg-violet-500 hover:bg-violet-700 rounded transtion duration-300 px-3 py-2">Sign up</a>
+        </div>
+
+  <!-- mobile button -->
+
+        <div class="md:hidden flex items-center">
+          <button class="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- mobile -->
+    <div class="md:hidden hidden mobile-menu">
+      <a href="#" class="block text-sm py-2 px-4">Features</a>
+      <a href="#" class="block text-sm py-2 px-4">Prices</a>
+    </div>
+  </nav>
+
+   <!-- content goes here -->
+  <div class="text-center py-32">
+    <h1 class="font-extrabold text-6xl"> I love stack-stream</h1>
+  </div>
+</body>
+
+<script>
+
+  // quering elements - all together
+
+  const btn = document.querySelector("mobile-menu-button");
+  const menu = document.querySelector("mobile-menu");
+
+  // event listeners
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+
+  });
+
+
+</script>
+
+</html>
